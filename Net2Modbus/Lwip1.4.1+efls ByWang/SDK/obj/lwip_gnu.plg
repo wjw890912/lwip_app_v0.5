@@ -1,0 +1,674 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\王均伟\lwip_app_v0.5\Net_V0.5\Lwip1.4.1+efls ByWang\SDK\lwip_gnu.uvproj
+Project File Date:  06/18/2016
+
+<h2>Output:</h2>
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.222V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(304): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               ((frameds.buffer[0]==MACaddr[0])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                                ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(305): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           (frameds.buffer[1]==MACaddr[1])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                           ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(306): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[0]==MACaddr[2])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(307): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[0]==MACaddr[3]))/*||
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(409): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(523): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 4 errors
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(304): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:          ((frameds.buffer[0]==MACaddr[0])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                           ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(305): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           (frameds.buffer[1]==MACaddr[1])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                           ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(306): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[2]==MACaddr[2])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(307): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[3]==MACaddr[3])
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(308): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[4]==MACaddr[4])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(309): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[5]==MACaddr[5])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(312): error:  #29: expected an expression
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               )/*||
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(417): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(531): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 7 errors
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(304): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:          (frameds.buffer[0]==MACaddr[0])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                          ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(305): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           (frameds.buffer[1]==MACaddr[1])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                           ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(306): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[2]==MACaddr[2])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(307): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[3]==MACaddr[3])
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(308): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[4]==MACaddr[4])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(309): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[5]==MACaddr[5])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(320): error:  #29: expected an expression
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               )
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(417): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(531): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 7 errors
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(304): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           ((frameds.buffer[0]==MACaddr[0])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                            ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(305): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           (frameds.buffer[1]==MACaddr[1])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                           ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(306): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[2]==MACaddr[2])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(307): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[3]==MACaddr[3])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(308): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[4]==MACaddr[4])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(309): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[5]==MACaddr[5])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(310): error:  #29: expected an expression
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               )
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(417): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(531): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 7 errors
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(304): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           ((frameds.buffer[0]==MACaddr[0])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                            ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(305): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:           (frameds.buffer[1]==MACaddr[1])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                           ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(306): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[2]==MACaddr[2])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(307): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[3]==MACaddr[3])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(308): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[4]==MACaddr[4])&&
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(309): error:  #142: expression must have pointer-to-object type
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:               (frameds.buffer[5]==MACaddr[5])
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                               ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(417): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(531): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 6 errors
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(412): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(526): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=49844 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 3 Warning(s).
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.222V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(321): error:  #29: expected an expression
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:          ) 
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:          ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(413): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(527): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 1 error
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(321): error:  #29: expected an expression
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:          ) 
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:          ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(415): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(529): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 1 error
+Target not created
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(415): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(529): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=49896 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 3 Warning(s).
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.215V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(415): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(529): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=49848 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 3 Warning(s).
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.215V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.215V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip2modbus'
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(414): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(528): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 3 Warning(s).
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.215V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(77): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(122): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                     uint16_t len;
+..\myself\src\client_tcpudp.c:                                                              ^
+..\myself\src\client_tcpudp.c(447): warning:  #550-D: variable "dst_ip_addr" was set but never used
+..\myself\src\client_tcpudp.c:                   ip_addr_t dst_ip_addr;
+..\myself\src\client_tcpudp.c:                             ^
+..\myself\src\client_tcpudp.c(503): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 4 Warning(s).
+Load "F:\\王均伟\\lwip_app_v0.5\\Net_V0.5\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.222V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lwip2modbus'
+linking...
+Program Size: Code=49756 RO-data=756 RW-data=1464 ZI-data=49664  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
